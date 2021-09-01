@@ -1,0 +1,14 @@
+{
+  "name": "ocean",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hmeinertrita/ocean.git",
+  "author": "hmeinertrita <28947881+hmeinertrita@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d Build"
+  }
+}

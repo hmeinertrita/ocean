@@ -613,6 +613,7 @@ GameObject:
   - component: {fileID: 393494076}
   - component: {fileID: 393494078}
   - component: {fileID: 393494079}
+  - component: {fileID: 393494080}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -785,7 +786,7 @@ MonoBehaviour:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 0.06857421, g: 0.11260704, b: 0.21698111, a: 1}
-  - {r: 0.90588236, g: 0.4745098, b: 0.6431373, a: 1}
+  - {r: 0.9433962, g: 0.5829477, b: 0.7238503, a: 1}
   seaColors:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 0, g: 0.39215687, b: 1, a: 1}
@@ -808,6 +809,7 @@ MonoBehaviour:
   transitions:
   - {fileID: 393494076}
   - {fileID: 2091515492}
+  - {fileID: 393494080}
 --- !u!114 &393494078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,8 +841,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 149051080}
   canvas: {fileID: 149051082}
-  timePerCharacter: 0
-  fadeTime: 1
+  timePerCharacter: 0.08
+  fadeTime: 1.5
+--- !u!114 &393494080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393494070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1071037413a34fe428badc55414ca874, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 393494073}
+  volumes:
+  - 0
+  - 0.06
+  - 0.4
+  - 0.15
 --- !u!1 &668243252
 GameObject:
   m_ObjectHideFlags: 0
@@ -2132,12 +2152,12 @@ MonoBehaviour:
   directionValues:
   - -1
   - -0.7
-  - 0.3
-  - -1
+  - 0.15
+  - -0.4
   indexValues: 05000000010000000100000008000000
   biasValues:
   - 1
-  - 4
+  - 2.3
   - 5
   - 1.5
   controller: {fileID: 2091515490}

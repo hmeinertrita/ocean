@@ -68,7 +68,7 @@ public class TransitionManager : MonoBehaviour
                 foreach (Transition t in transitions) {
                     t.EndTransition();
                 }
-                SongController.PlayNext();
+                //SongController.PlayNext();
             }
         }
     }
